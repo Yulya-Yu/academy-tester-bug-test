@@ -6,23 +6,23 @@
             <header class="block">
                 <ul class="header-menu horizontal-list">
                     <li>
-                        <a class="header-menu-tab" href="#1"><span class="icon entypo-cog scnd-font-color"></span>Settings</a>
+                        <a class="header-menu-tab" @click="fakeRedirect"><span  class="icon entypo-cog scnd-font-color"></span>Settings</a>
                     </li>
                     <li>
-                        <a class="header-menu-tab" href="#2"><span class="icon fontawesome-user scnd-font-color"></span>Account</a>
+                        <a class="header-menu-tab" @click='incorrectParam'><span class="icon fontawesome-user scnd-font-color"></span>Account</a>
                     </li>
                     <li>
-                        <a class="header-menu-tab" href="#3"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages</a>
-                        <a class="header-menu-number" href="#4">5</a>
+                        <a class="header-menu-tab" @click="getSomething"><span  class="icon fontawesome-envelope scnd-font-color"></span>Messages</a>
+                        <a class="header-menu-number">5</a>
                     </li>
                     <li>
-                        <a class="header-menu-tab" href="#5"><span class="icon fontawesome-star-empty scnd-font-color"></span>Favorites</a>
+                        <a class="header-menu-tab"><span class="icon fontawesome-star-empty scnd-font-color"></span>Favorites</a>
                     </li>
                 </ul>
                 <div class="profile-menu">
-                    <p>Me <a href="#26"><span class="entypo-down-open scnd-font-color"></span></a></p>
+                    <p>Me <a><span class="entypo-down-open scnd-font-color"></span></a></p>
                     <div class="profile-picture small-profile-picture">
-                        <img width="40px" alt="Anne Hathaway picture" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg">
+                        <img src="../assets/bg1.png">
                     </div>
                 </div>
             </header>
@@ -33,31 +33,29 @@
                     <h2 class="titular">MENU BOX</h2>
                     <ul class="menu-box-menu">
                         <li>
-                            <a class="menu-box-tab" href="#6"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages<div class="menu-box-number">24</div></a>                            
+                            <a class="menu-box-tab"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages<div class="menu-box-number">24</div></a>                            
                         </li>
                         <li>
-                            <a class="menu-box-tab" href="#8"><span class="icon entypo-paper-plane scnd-font-color"></span>Invites<div class="menu-box-number">3</div></a>                            
+                            <a class="menu-box-tab"><span class="icon entypo-paper-plane scnd-font-color"></span>Invites<div class="menu-box-number">3</div></a>                            
                         </li>
                         <li>
-                            <a class="menu-box-tab" href="#10"><span class="icon entypo-calendar scnd-font-color"></span>Events<div class="menu-box-number">5</div></a>                            
+                            <a class="menu-box-tab"><span class="icon entypo-calendar scnd-font-color"></span>Events<div class="menu-box-number">5</div></a>                            
                         </li>
                         <li>
-                            <a class="menu-box-tab" href="#12"><span class="icon entypo-cog scnd-font-color"></span>Account Settings</a>
+                            <a class="menu-box-tab" ><span class="icon entypo-cog scnd-font-color"></span>Account Settings</a>
                         </li>
                         <li>
-                            <a class="menu-box-tab" href="#13"><span class="icon entypo-chart-line scnd-font-color"></span>Statistics</a>
+                            <a class="menu-box-tab"><span class="icon entypo-chart-line scnd-font-color"></span>Statistics</a>
                         </li>                        
                     </ul>
                 </div>
                 <div class="donut-chart-block block"> <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
                     <h2 class="titular">OS AUDIENCE STATS</h2>
                     <div class="donut-chart">
-                        <!-- DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
                         <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
                         <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
                         <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
-                        <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
-                        <!-- END DONUT-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->    
+                        <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>  
                         <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p> 
                     </div>
                     <ul class="os-percentages horizontal-list">
@@ -79,9 +77,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="line-chart-block block clear"> <!-- LINE CHART BLOCK (LEFT-CONTAINER) -->
+                <div class="line-chart-block block clear">
                     <div class="line-chart">
-                      <!-- LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL -->
                         <div class='grafico'>
                            <ul class='eje-y'>
                              <li data-ejeY='30'></li>
@@ -105,9 +102,9 @@
                         </div>
                     </div>
                     <ul class="time-lenght horizontal-list">
-                        <li><a class="time-lenght-btn" href="#14">Week</a></li>
-                        <li><a class="time-lenght-btn" href="#15">Month</a></li>
-                        <li><a class="time-lenght-btn" href="#16">Year</a></li>
+                        <li><a class="time-lenght-btn">Week</a></li>
+                        <li><a class="time-lenght-btn">Month</a></li>
+                        <li><a class="time-lenght-btn">Year</a></li>
                     </ul>
                     <ul class="month-data clear">
                         <li>
@@ -124,17 +121,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="media block"> <!-- MEDIA (LEFT-CONTAINER) -->
-                    <div id="media-display">
-                        <a class="media-btn play" href="#23"><span class="fontawesome-play"></span></a>
-                    </div>
-                    <div class="media-control-bar">
-                        <a class="media-btn play" href="#23"><span class="fontawesome-play scnd-font-color"></span></a>
-                        <p class="time-passed">4:15 <span class="time-duration scnd-font-color">/ 9:23</span></p>
-                        <a class="media-btn volume" href="#24"><span class="fontawesome-volume-up scnd-font-color"></span></a>
-                        <a class="media-btn resize" href="#25"><span class="fontawesome-resize-full scnd-font-color"></span></a>
-                    </div>
-                </div>
                 <ul class="social horizontal-list block"> <!-- SOCIAL (LEFT-CONTAINER) -->
                     <li class="facebook"><p class="icon"><span class="zocial-facebook"></span></p><p class="number">248k</p></li>
                     <li class="twitter"><p class="icon"><span class="zocial-twitter"></span></p><p class="number">30k</p></li>
@@ -146,11 +132,11 @@
             <!-- MIDDLE-CONTAINER -->
             <div class="middle-container container">
                 <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
-                    <a class="add-button" href="#28"><span class="icon entypo-plus scnd-font-color"></span></a>
+                    <a class="add-button"><span class="icon entypo-plus scnd-font-color"></span></a>
                     <div class="profile-picture big-profile-picture clear">
-                        <img width="150px" alt="Anne Hathaway picture" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg" >
+                        <img width="350px"  src="../assets/bg1.png" >
                     </div>
-                    <h1 class="user-name">Anne Hathaway</h1>
+                    <h1 class="user-name">Lorem ipsum</h1>
                     <div class="profile-description">
                         <p class="scnd-font-color">Lorem ipsum dolor sit amet consectetuer adipiscing</p>
                     </div>
@@ -163,37 +149,37 @@
                     </div>
                     <ul class="next-days">
                         <li>
-                            <a href="#43">
+                            <a>
                                 <p class="next-days-date"><span class="day">SAT</span> <span class="scnd-font-color">29/06</span></p>
                                 <p class="next-days-temperature">25º<span class="icon icon-cloudy scnd-font-color"></span></p>
                             </a>
                         </li>
                         <li>
-                            <a href="#44">
+                            <a>
                                 <p class="next-days-date"><span class="day">SUN</span> <span class="scnd-font-color">30/06</span></p>
                                 <p class="next-days-temperature">22º<span class="icon icon-cloudy2 scnd-font-color"></span></p>
                             </a>
                         </li>
                         <li>
-                            <a href="#45">
+                            <a>
                                 <p class="next-days-date"><span class="day">MON</span> <span class="scnd-font-color">01/07</span></p>
                                 <p class="next-days-temperature">24º<span class="icon icon-cloudy2 scnd-font-color"></span></p>
                             </a>
                         </li>
                         <li>
-                            <a href="#46">
+                            <a>
                                 <p class="next-days-date"><span class="day">TUE</span> <span class="scnd-font-color">02/07</span></p>
                                 <p class="next-days-temperature">26º<span class="icon icon-cloudy scnd-font-color"></span></p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <p class="next-days-date"><span class="day">WED</span> <span class="scnd-font-color">03/07</span></p>
                                 <p class="next-days-temperature">27º<span class="icon icon-sun scnd-font-color"></span></p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a>
                                 <p class="next-days-date"><span class="day">THU</span> <span class="scnd-font-color">04/07</span></p>
                                 <p class="next-days-temperature">29º<span class="icon icon-sun scnd-font-color"></span></p>
                             </a>
@@ -203,19 +189,14 @@
                 <div class="tweets block"> <!-- TWEETS (MIDDLE-CONTAINER) -->
                     <h2 class="titular"><span class="icon zocial-twitter"></span>LATEST TWEETS</h2>
                     <div class="tweet first">
-                        <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a class="tweet-link" href="#17">@Quora</a></p>
-                        <p><a class="time-ago scnd-font-color" href="#18">3 minutes ago</a></p>
+                        <p>Ice-cream trucks only play music when out of ice-cream. Well played dad. On <a class="tweet-link">@Quora</a></p>
+                        <p><a class="time-ago scnd-font-color">3 minutes ago</a></p>
                     </div>
                     <div class="tweet">
-                        <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a class="tweet-link" href="#19">#CreativeCloud</a></p>
-                        <p><a class="scnd-font-color" href="#20">6 hours ago</a></p>
+                        <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a class="tweet-link">#CreativeCloud</a></p>
+                        <p><a class="scnd-font-color">6 hours ago</a></p>
                     </div>
                 </div> 
-                <ul class="social block"> <!-- SOCIAL (MIDDLE-CONTAINER) -->
-                    <li><a href="#50"><div class="facebook icon"><span class="zocial-facebook"></span></div><h2 class="facebook titular">SHARE TO FACEBOOK</h2></a></li>
-                    <li><a href="#51"><div class="twitter icon"><span class="zocial-twitter"></span></div><h2 class="twitter titular">SHARE TO TWITTER</h2></a></li>
-                    <li><a href="#52"><div class="googleplus icon"><span class="zocial-googleplus"></span></div><h2 class="googleplus titular">SHARE TO GOOGLE+</h2></a></li>
-                </ul>
             </div>
 
             <!-- RIGHT-CONTAINER -->
@@ -226,7 +207,7 @@
                         <input type="text" placeholder="yourname@gmail.com" class="email text-input">
                         <div class="input-icon envelope-icon-newsletter"><span class="fontawesome-envelope scnd-font-color"></span></div>
                     </div>
-                    <a class="subscribe button" href="#21">SUBSCRIBE</a>
+                    <a class="subscribe button">SUBSCRIBE</a>
                 </div>
                 <div class="account block"> <!-- ACCOUNT (RIGHT-CONTAINER) -->
                     <h2 class="titular">SIGN IN TO YOUR ACCOUNT</h2>
@@ -238,9 +219,9 @@
                         <input type="text" placeholder="Password" class="password text-input">
                         <div class="input-icon password-icon"><span class="fontawesome-lock scnd-font-color"></span></div>
                     </div>
-                    <a class="sign-in button" href="#22">SIGN IN</a>
+                    <a class="sign-in button">SIGN IN</a>
                     <p class="scnd-font-color">Forgot Password?</p>
-                    <a class="fb-sign-in" href="58">
+                    <a class="fb-sign-in">
                         <p><span class="fb-border"><span class="icon zocial-facebook"></span></span>Sign in with Facebook</p>
                     </a>
                 </div>
@@ -254,12 +235,12 @@
                 </div>
                 <div class="calendar-day block"> <!-- CALENDAR DAY (RIGHT-CONTAINER) -->
                     <div class="arrow-btn-container">
-                        <a class="arrow-btn left" href="#200"><span class="icon fontawesome-angle-left"></span></a>
+                        <a class="arrow-btn left"><span class="icon fontawesome-angle-left"></span></a>
                         <h2 class="titular">WEDNESDAY</h2>
-                        <a class="arrow-btn right" href="#201"><span class="icon fontawesome-angle-right"></span></a>
+                        <a class="arrow-btn right"><span class="icon fontawesome-angle-right"></span></a>
                     </div>
                         <p class="the-day">26</p>
-                        <a class="add-event button" href="#27">ADD EVENT</a>
+                        <a class="add-event button">ADD EVENT</a>
                 </div>
             </div> <!-- end right-container -->
         </div> <!-- end main-container -->
@@ -267,13 +248,43 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: "HelloWorld",
   data() {
     return {
     };
   },
-  methods: {}
+  methods: {
+    fakeRedirect(){
+       this.$router.push({ name: '/' });
+    },
+    getSomething() {
+        axios({
+        url: `https://academy.smw.tom.ru/goals`,
+        method: 'GET'
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => this.errorAlert(error));
+    },
+    incorrectParam(){
+        axios({
+        url: `https://academy.smw.tom.ru/goals`,
+        method: 'POST',
+        data: {
+          new_goal: 'check post request',
+          dateStart: 'tomorrow',
+          dateEnd: 'never'
+        }
+      })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => this.errorAlert(error));
+    }
+  }
 };
 </script>
 <style>
@@ -291,18 +302,7 @@ export default {
 [class*="zocial-"]:before {
   font-family: "zocial", sans-serif;
 }
-@font-face {
-  font-family: "icomoon";
-  src: url("https://jlalovi-cv.herokuapp.com/font/icomoon.eot");
-  src: url("https://jlalovi-cv.herokuapp.com/font/icomoon.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://jlalovi-cv.herokuapp.com/font/icomoon.ttf") format("truetype"),
-    url("https://jlalovi-cv.herokuapp.com/font/icomoon.woff") format("woff"),
-    url("https://jlalovi-cv.herokuapp.com/font/icomoon.svg#icomoon")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 [class^="icon-"],
 [class*=" icon-"] {
@@ -334,7 +334,9 @@ export default {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+a:hover{
+cursor: pointer;
+}
 body {
   background: #1f253d;
 }
@@ -374,6 +376,7 @@ span {
 }
 .scnd-font-color {
   color: #9099b7;
+  padding-left: 8px;
 }
 
 .input-container {
@@ -636,7 +639,7 @@ header {
 }
 .menu-box-tab {
   line-height: 60px;
-  display: block;
+  display: flex;
   border-bottom: 1px solid #1f253d;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
@@ -942,9 +945,6 @@ p.center-date {
 #media-display {
   position: relative;
   height: 180px;
-  background: #787878
-    url("https://www.fancinema.com.ar/wp-content/uploads/catwoman1.jpg") center
-    top;
 }
 #media-display .play {
   position: absolute;
@@ -1406,5 +1406,11 @@ p.center-date {
   line-height: 34px;
   background: #e64c65;
   border-radius: 100%;
+}
+
+@media screen and (max-width: 1018px) {
+.main-container {
+  display: flex !important;
+}
 }
 </style>
