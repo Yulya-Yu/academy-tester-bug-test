@@ -33,20 +33,20 @@
                     <h2 class="titular">MENU BOX</h2>
                     <ul class="menu-box-menu">
                         <li>
-                            <a class="menu-box-tab"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages<div class="menu-box-number">24</div></a>                            
+                            <a class="menu-box-tab"><span class="icon fontawesome-envelope scnd-font-color"></span>Messages<div class="menu-box-number">24</div></a>
                         </li>
                         <li>
-                            <a class="menu-box-tab"><span class="icon entypo-paper-plane scnd-font-color"></span>Invites<div class="menu-box-number">3</div></a>                            
+                            <a class="menu-box-tab"><span class="icon entypo-paper-plane scnd-font-color"></span>Invites<div class="menu-box-number">3</div></a>
                         </li>
                         <li>
-                            <a class="menu-box-tab"><span class="icon entypo-calendar scnd-font-color"></span>Events<div class="menu-box-number">5</div></a>                            
+                            <a class="menu-box-tab"><span class="icon entypo-calendar scnd-font-color"></span>Events<div class="menu-box-number">5</div></a>
                         </li>
                         <li>
                             <a class="menu-box-tab" ><span class="icon entypo-cog scnd-font-color"></span>Account Settings</a>
                         </li>
                         <li>
                             <a class="menu-box-tab"><span class="icon entypo-chart-line scnd-font-color"></span>Statistics</a>
-                        </li>                        
+                        </li>
                     </ul>
                 </div>
                 <div class="donut-chart-block block"> <!-- DONUT CHART BLOCK (LEFT-CONTAINER) -->
@@ -55,8 +55,8 @@
                         <div id="porcion1" class="recorte"><div class="quesito ios" data-rel="21"></div></div>
                         <div id="porcion2" class="recorte"><div class="quesito mac" data-rel="39"></div></div>
                         <div id="porcion3" class="recorte"><div class="quesito win" data-rel="31"></div></div>
-                        <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>  
-                        <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p> 
+                        <div id="porcionFin" class="recorte"><div class="quesito linux" data-rel="9"></div></div>
+                        <p class="center-date">JUNE<br><span class="scnd-font-color">2013</span></p>
                     </div>
                     <ul class="os-percentages horizontal-list">
                         <li>
@@ -94,8 +94,8 @@
                              <span data-valor='25'>
                                <span data-valor='8'>
                                  <span data-valor='13'>
-                                   <span data-valor='5'>   
-                                     <span data-valor='23'>   
+                                   <span data-valor='5'>
+                                     <span data-valor='23'>
                                      <span data-valor='12'>
                                          <span data-valor='15'>
                                          </span></span></span></span></span></span></span>
@@ -196,7 +196,7 @@
                         <p>We are in the process of pushing out all of the new CC apps! We will tweet again once they are live <a class="tweet-link">#CreativeCloud</a></p>
                         <p><a class="scnd-font-color">6 hours ago</a></p>
                     </div>
-                </div> 
+                </div>
             </div>
 
             <!-- RIGHT-CONTAINER -->
@@ -290,6 +290,18 @@ export default {
 <style>
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
 @import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background-color: rgba(145, 160, 186, 0.15);
+  border-radius: 4px;
+  margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(145, 160, 186, 0.2);
+  border-radius: 4px;
+}
 /* entypo */
 [class*="entypo-"]:before {
   font-family: "entypo", sans-serif;
@@ -314,9 +326,6 @@ export default {
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .icon-cloudy:before {
   content: "\e60f";
